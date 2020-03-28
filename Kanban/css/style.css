@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	position: relative;
+	min-height: 100vh;
+	min-width: 100vh;
+	max-width: fit-content;
+	background-color: #242424;
+	color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* v Index.php v*/
+
+nav{
+	text-align: center;
+	border: none;
+	font-size: 16px;
+	float: right;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+nav a{
+	font-size: 20px;
+}
+
+.Nbutton{
+	padding-right: 20px;
+	padding-left: 20px;
+	display: inline-block;
+	border-right: 1px solid white;
+}
+
+.Nbutton:last-child{
+	border-right:none;
+}
+
+
+.content{
+	position: relative;
+	overflow: hidden;
+	padding: 3px;
+	color: white;
+}
+
+.title{
+	position: relative;
+	overflow: hidden;
+	font-size: 50px;
+	font-weight: 900;
+	width: 50%;
+	margin-right: 0;
+}
+
+.button{
+	padding: 10px;
+	border: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 8px;
+	border: 2px solid white;
+	transition: background-color 1s;
+}
+
+.button:hover{
+	background-color: white;
+	color: #242424;
+}
+
+#arc{
+	padding: 10px;
+	font-weight: normal;
+	float: right;
+	font-size: 50px;
+}
+
+#line{
+	border-bottom: 2px solid white;
+	padding-bottom: 70px;
+}
+
+footer{
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+}
+
+/* ^ Index.php ^ */
+
+/* v login.php v */
+
+.form-signin{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form-signin .form-control{
+	position: relative;
+	box-sizing: border-box;
+	height: auto;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	background-color: #242424;
+}
+
+#lines{
+	border-bottom: 2px solid white;
+}
+
+.label{
+	display: none;
+}
+
+/* ^ login.php ^ */
+
+/* v about.php v */
+
+#box{
+	margin: auto;
+	border: 2px solid white;
+	padding: 10px;
+	width: 50%;
+	text-align: center;
+}
