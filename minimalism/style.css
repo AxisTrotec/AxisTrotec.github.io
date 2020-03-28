@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html{
+    font-family: 'Montserrat', sans-serif;  
+}
+
+body{
+    animation: change-bg 30s;
+}
+
+#minimal{
+    font-size: 70px;
+    font-weight: bolder;
+    animation: change-color 30s linear;
+    animation-fill-mode: forwards;
+}
+
+#simple, #elegant, #design{
+    font-size: 70px;
+    font-weight: bolder;
+    top: 38%;
+    left: 40%;
+    z-index: -1;
+    position: absolute;
+}
+
+#minimalist{
+    font-size: 70px;
+    font-weight: bolder;
+    top: 38%;
+    z-index: -1;
+    position: absolute;
+}
+
+#simple{
+    visibility: hidden;
+    animation: simple 20s linear 30s;
+    animation-fill-mode: forwards;
+}
+
+#elegant{
+    visibility: hidden;
+    animation: simple 20s linear 40s;
+    animation-fill-mode: forwards;
+}
+
+#design{
+    visibility: hidden;
+    animation: simple 20s linear 50s;
+    animation-fill-mode: forwards;
+}
+
+#minimalist{
+    visibility: hidden;
+    animation: minimal 20s linear 60s;
+    animation-fill-mode: forwards;
+}
+
+h6{
+    margin: 0;
+    display: inline;
+    animation: static 30s linear;
+    animation-fill-mode: forwards;  
+}
+
+header{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+footer{
+    bottom: 0;
+    text-align: center;
+}
+
+#footer{
+    animation: footer 30s linear;
+}
+
+@keyframes simple{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    50%{
+        color: #242424;
+        visibility: visible;
+    }
+
+    60%{
+        color: white;
+    }
+
+    100%{
+        color: white;
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@keyframes minimal{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    80%{
+        visibility: visible;
+        color: #242424;
+    }
+
+    100%{
+        color: #242424;
+        visibility: visible;
+    }
+}
+
+@keyframes change-bg{
+    0%{
+        background-color: #242424;
+    }
+
+    100%{
+        background-color: white;
+    }
+}
+
+@keyframes footer{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes change-color{
+    0%{
+        color: white;
+    }
+
+    50%{
+        color: #242424;
+    }
+
+    100%{
+        color: white;
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@keyframes static{
+    0%{
+        color: white;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        color: #242424;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
