@@ -1,0 +1,505 @@
+*{
+    font-family: 'Montserrat';
+}
+
+@-ms-viewport{
+    width: device-width;
+}
+
+@media (prefers-color-scheme: light) {
+    .nav a, .Icon i, .icon i, a, h3, .nav a:hover, .Icon:hover, .icon:hover{
+        color: black;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .logo{
+        background-image: url(Images/LogoLight.png);
+        background-size: 20%;
+        background-repeat: no-repeat;
+        padding-bottom: 3em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .nav a, .Icon i, .icon i, a, h3, .nav a:hover, .Icon:hover, .icon:hover{
+        color: white;
+    }
+
+    body {
+        background-color: #242424;
+    }
+
+    .logo{
+        background-image: url(Images/LogoDark.png);
+        background-size: 20%;
+        background-repeat: no-repeat;
+        padding-bottom: 3em;
+    }
+
+}
+
+#About{
+    color: white;
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 3s;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+.nav{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
+    background-color: hsla(0, 1%, 29%, 0.5);
+}
+
+.nav a{
+    text-align: center;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.Icon, .icon{
+    transition: 0.4s;
+    cursor: pointer;
+    display: none;
+}
+
+.Icon{
+    float: right;
+}
+
+.Icon i{
+    line-height: 30px;
+}
+
+.nav a:hover, .Icon:hover, .icon:hover{
+    background-color: #242424;
+}
+
+#menu{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    text-align: center;
+}
+
+#welcome{
+    color: white;
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 3s;
+    margin-bottom: 0;
+}
+
+h3{
+    color: white;
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 3s;
+    margin-bottom: 0;
+}
+
+#Purpose{
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#recon{
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    transition: background-color 5s;
+    margin-bottom: 0;
+}
+
+#Headphones, #Dac, #Audio, #headphones, #dac, #audio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#Headphones:hover + #headphones, #headphones:hover{
+    display: block;
+}
+
+#headphones > p{
+    margin-top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 0.5s linear;
+}
+
+#headphones{
+    display: none;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    transition: background-color 5s;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#headphones:hover > p {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#Dac:hover + #dac, #dac:hover{
+    display: block;
+}
+
+#dac > p{
+    margin-top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 0.5s linear;
+}
+
+#dac{
+    display: none;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    transition: background-color 5s;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#dac:hover > p {
+    visibility: visible;
+    opacity: 1;
+}
+
+#Audio:hover + #audio, #audio:hover{
+    display: block;
+}
+
+#audio > p{
+    margin-top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 0.5s linear;
+}
+
+#audio{
+    display: none;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    transition: background-color 5s;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#audio:hover > p {
+    visibility: visible;
+    opacity: 1;
+}
+
+th{
+    padding-left: 50px;
+}
+
+td{
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+
+td a{
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar{
+    height: 7px;
+    border: 1px solid white;
+}
+
+::-webkit-scrollbar-track{
+    background: hsla(0, 0%, 0%, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: black;
+}
+
+#purpose > p{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 0.5s linear;
+    margin-top: 0;
+}
+
+#purpose{
+    color: white;
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 3s;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+#purpose:hover > p {
+    visibility: visible;
+    opacity: 1;
+}
+
+#Navigate{
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#navigate > div{
+    margin-top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 0.5s linear;
+}
+
+#navigate{
+    color: white;
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 3s;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+#navigate:hover > div {
+    visibility: visible;
+    opacity: 2;
+}
+
+.line{
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 3s;
+}
+
+.line > p{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.Nav{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    transition: background-color 3s;
+}
+
+.Navi{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.email{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 3s;
+}
+
+.contact{
+    background-color: hsla(0, 1%, 29%, 0.5);
+    padding: 80px 0;
+    text-align: center;
+}
+  
+.box{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+}
+  
+.contact h1{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+  
+.name,.email,.message{
+    background-color: hsla(0, 1%, 29%, 0.5);
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: white;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+  
+.name{
+    float: left;
+    width: 270px;
+    color: white;
+}
+  
+.email{
+    float: right;
+    width: 270px;
+    color: white;
+}
+
+.message{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+::placeholder{
+    color: white;
+}
+  
+  
+.contact button{
+    background: none;
+    color: white;
+    border: 1px solid #70a1ff;
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+  
+.contact-section button:hover{
+    background-color: hsla(0, 1%, 29%, 0.5);
+    color: white;
+} 
+
+.icon{
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+
+.icon:hover{
+    color: white;
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 2s;
+}
+
+.card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+  
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+
+.card:hover email{
+    max-height: 40px;
+    opacity: 1;
+}
+
+#history{
+    color: white;
+    background-color: hsla(0, 1%, 29%, 0.5);
+    transition: background-color 3s;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(Images/test.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    iframe{
+        width: 426px;
+        height: 240px;
+    }
+
+    .logo{
+        background-size: 50%;
+    }
+
+    .name,.email{
+        width: 100%;
+    }
+
+    .Icon, .icon{
+        display: block;
+    }
+
+    .nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(0, 1%, 29%);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+    .nav a{
+        display: block;
+        padding: 20px;
+    }
+
+    .icon{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #menu:checked ~ .nav{
+        right: 0;
+    }
+}
