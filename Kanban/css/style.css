@@ -123,6 +123,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	text-align: center;
 }
 
 /* ^ Index.php ^ */
@@ -169,28 +170,19 @@ footer {
 @media screen and (max-width: 800px){
 	html, body {
 		min-height: 0;
-		min-width: 0vh;
-		background-color: #242424;
-		color: white;
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		height: 100%;
-		position: relative;
+		min-width: 0;
+	}
+
+	.content{
+		text-align: center;
 	}
 
 	.title{
-		position: relative;
-		overflow: hidden;
 		font-size: 40px;
-		font-weight: 900;
 		width: 100%;
-		margin-right: 0;
 	}
 
 	#arc{
-		padding: 10px;
-		font-weight: normal;
 		float: none;
 		font-size: 40px;
 	}
