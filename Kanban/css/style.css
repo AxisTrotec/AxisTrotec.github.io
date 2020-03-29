@@ -2,18 +2,35 @@
 
 * {
 	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
 }
 
-body{
-	position: relative;
+*:before, *:after {
+	box-sizing: border-box;
+}
+
+@-ms-viewport{
+    width: device-width;
+}
+
+html, body {
 	min-height: 100vh;
 	min-width: 100vh;
-	max-width: fit-content;
 	background-color: #242424;
 	color: white;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	height: 100%;
+	position: relative;
+}
+
+.main {
+	min-height: 100vh;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding-bottom: 100px;
 }
 
 /* v Index.php v*/
@@ -94,12 +111,18 @@ nav a{
 	padding-bottom: 70px;
 }
 
-footer{
+/* footer{
 	text-align: center;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 2.5rem;
+} */
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 /* ^ Index.php ^ */
@@ -141,4 +164,48 @@ footer{
 	padding: 10px;
 	width: 50%;
 	text-align: center;
+}
+
+@media screen and (max-width: 800px){
+	html, body {
+		min-height: 0;
+		min-width: 0vh;
+		background-color: #242424;
+		color: white;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+		position: relative;
+	}
+
+	.title{
+		position: relative;
+		overflow: hidden;
+		font-size: 40px;
+		font-weight: 900;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#arc{
+		padding: 10px;
+		font-weight: normal;
+		float: none;
+		font-size: 40px;
+	}
+
+	#line{
+		border-bottom: 2px solid white;
+		padding-bottom: 0px;
+	}
+	
+	footer{
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 2.5rem;
+	}
+	
 }
